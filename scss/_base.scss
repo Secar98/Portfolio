@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+$primary-color: #1b1b1b;
+$secondary-color: orange;
+$accent-color: orange;
+
+@mixin transition-icon {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}

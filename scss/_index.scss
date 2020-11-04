@@ -1,0 +1,147 @@
+body {
+  height: 99vh;
+}
+
+.hero-header {
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+
+  .header-first {
+    color: #fff;
+    font-style: italic;
+
+    .yellow-header {
+      color: $secondary-color;
+    }
+  }
+}
+.hero-text {
+  width: 60%;
+  margin: 5px auto;
+  font-size: 0.8em;
+
+  .paragraph-text {
+    text-align: center;
+    color: #fff;
+
+    .yellow-text {
+      color: $secondary-color;
+    }
+  }
+}
+
+.main-projects {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+
+  .projects1 {
+    color: black;
+    width: 95%;
+    height: 200px;
+    margin: 50px auto;
+    border: 5px solid $accent-color;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 5px;
+
+    .img-projects {
+      background-image: url(../img/project_1.jpeg);
+      background-position: center;
+      height: 150px;
+    }
+
+    .icons {
+      margin: 6px auto;
+    }
+    .fas:hover,
+    .fab:hover {
+      @include transition-icon;
+    }
+  }
+  .projects2 {
+    color: black;
+    width: 95%;
+    height: 200px;
+    margin: 20px auto;
+    margin-bottom: 60px;
+    border: 5px solid $accent-color;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 5px;
+
+    .img-projects {
+      background-image: url(../img/project_2.jpg);
+      background-position: center;
+      height: 150px;
+    }
+    .icons {
+      margin: 6px auto;
+    }
+    .fas:hover,
+    .fab:hover {
+      @include transition-icon;
+    }
+  }
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $secondary-color;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .left-nav {
+      margin-left: 10px;
+
+      i {
+          padding-left: 5px;
+      }
+  }
+
+  .fas:hover,
+  .fab:hover {
+    @include transition-icon;
+  }
+
+  .right-nav {
+    display: grid;
+    justify-content: end;
+    margin-right: 10px;
+  }
+
+  .dropup-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    bottom: 32px;
+    z-index: 1;
+
+    a {
+      color: black;
+      font-size: 0.5em;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .right-nav:hover .dropup-content {
+    display: block;
+    background-color: $secondary-color;
+  }
+
+  .right-nav:hover .dropbtn {
+    background-color: $secondary-color;
+  }
+}

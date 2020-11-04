@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 99vh;
+}
+
+.hero-header {
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+}
+
+.hero-header .header-first {
+  color: #fff;
+  font-style: italic;
+}
+
+.hero-header .header-first .yellow-header {
+  color: orange;
+}
+
+.hero-text {
+  width: 60%;
+  margin: 5px auto;
+  font-size: 0.8em;
+}
+
+.hero-text .paragraph-text {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text .paragraph-text .yellow-text {
+  color: orange;
+}
+
+.main-projects {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.main-projects .projects1 {
+  color: black;
+  width: 95%;
+  height: 200px;
+  margin: 50px auto;
+  border: 5px solid orange;
+  width: 100%;
+  background-color: orange;
+  border-radius: 5px;
+}
+
+.main-projects .projects1 .img-projects {
+  background-image: url(../img/project_1.jpeg);
+  background-position: center;
+  height: 150px;
+}
+
+.main-projects .projects1 .icons {
+  margin: 6px auto;
+}
+
+.main-projects .projects1 .fas:hover,
+.main-projects .projects1 .fab:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.main-projects .projects2 {
+  color: black;
+  width: 95%;
+  height: 200px;
+  margin: 20px auto;
+  margin-bottom: 60px;
+  border: 5px solid orange;
+  width: 100%;
+  background-color: orange;
+  border-radius: 5px;
+}
+
+.main-projects .projects2 .img-projects {
+  background-image: url(../img/project_2.jpg);
+  background-position: center;
+  height: 150px;
+}
+
+.main-projects .projects2 .icons {
+  margin: 6px auto;
+}
+
+.main-projects .projects2 .fas:hover,
+.main-projects .projects2 .fab:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: orange;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navigation .left-nav {
+  margin-left: 10px;
+}
+
+.navigation .left-nav i {
+  padding-left: 5px;
+}
+
+.navigation .fas:hover,
+.navigation .fab:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navigation .right-nav {
+  display: grid;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.navigation .dropup-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  bottom: 32px;
+  z-index: 1;
+}
+
+.navigation .dropup-content a {
+  color: black;
+  font-size: 0.5em;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navigation .dropup-content a:hover {
+  background-color: #1b1b1b;
+  color: orange;
+}
+
+.navigation .right-nav:hover .dropup-content {
+  display: block;
+  background-color: orange;
+}
+
+.navigation .right-nav:hover .dropbtn {
+  background-color: orange;
+}
+
+body {
+  background-color: #1b1b1b;
+}
+/*# sourceMappingURL=main.css.map */
