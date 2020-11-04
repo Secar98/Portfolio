@@ -19,7 +19,7 @@ body {
 .hero-text {
   width: 60%;
   margin: 5px auto;
-  font-size: 0.8em;
+  font-size: 1em;
 
   .paragraph-text {
     text-align: center;
@@ -86,7 +86,7 @@ body {
   }
 }
 
-.navigation {
+.mobile {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: $secondary-color;
@@ -144,4 +144,35 @@ body {
   .right-nav:hover .dropbtn {
     background-color: $secondary-color;
   }
+}
+
+
+@media only screen and (min-width: 800px) {
+  .desktop {
+    background-color: $secondary-color;
+    padding-left: 10px;
+  
+    a {
+      padding-left: 10px;
+      text-decoration: none;
+      color: black;
+      font-size: 2.5em;
+  
+      &:hover {
+        @include transition-icon;
+      }
+    }
+  
+    .right-desktop-nav {
+      float: right;
+      padding-right: 10px;
+    }
+  
+  }
+  
+}
+
+
+.hide {
+  display: none;
 }
