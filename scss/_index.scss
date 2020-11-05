@@ -2,6 +2,23 @@ body {
   height: 99vh;
 }
 
+.desktop-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+  
+  .fab {
+    padding-top: 5px;
+    color: $secondary-color;
+
+    &:hover {
+      @include transition-icon;
+    }
+  }
+}
+
 .hero-header {
   margin: 10px auto;
   width: 90%;
@@ -45,6 +62,12 @@ body {
     width: 100%;
     background-color: $accent-color;
     border-radius: 5px;
+    transition: 1s;
+    
+    &:hover {
+      transition: 1s;
+      transform: scale(1.2);
+    }
 
     .img-projects {
       background-image: url(../img/project_1.jpeg);
@@ -64,12 +87,17 @@ body {
     color: black;
     width: 95%;
     height: 200px;
-    margin: 20px auto;
-    margin-bottom: 60px;
+    margin: 50px auto;
     border: 5px solid $accent-color;
     width: 100%;
     background-color: $accent-color;
     border-radius: 5px;
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+      transform: scale(1.2);
+    }
 
     .img-projects {
       background-image: url(../img/project_2.jpg);
@@ -86,93 +114,18 @@ body {
   }
 }
 
-.mobile {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: $secondary-color;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-
-  .left-nav {
-      margin-left: 10px;
-
-      i {
-          padding-left: 5px;
-      }
-  }
-
-  .fas:hover,
-  .fab:hover {
-    @include transition-icon;
-  }
-
-  .right-nav {
-    display: grid;
-    justify-content: end;
-    margin-right: 15px;
-  }
-
-  .dropup-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    bottom: 32px;
-    z-index: 1;
-
-    a {
-      color: black;
-      font-size: 0.5em;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-
-      &:hover {
-        background-color: $primary-color;
-        color: $secondary-color;
-      }
-    }
-  }
-
-  .right-nav:hover .dropup-content {
-    display: block;
-    background-color: $secondary-color;
-  }
-
-  .right-nav:hover .dropbtn {
-    background-color: $secondary-color;
-  }
-}
-
-
 @media only screen and (min-width: 800px) {
-  .desktop {
-    background-color: $secondary-color;
-    padding-left: 10px;
-  
-    a {
-      padding-left: 10px;
-      text-decoration: none;
-      color: black;
-      font-size: 2.5em;
-  
-      &:hover {
-        @include transition-icon;
-      }
-    }
-  
-    .right-desktop-nav {
-      float: right;
-      padding-right: 10px;
-    }
-  
+  .main-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    gap: 100px;
   }
-  
-}
 
-
-.hide {
-  display: none;
+  .hero-header {
+    font-size: 1.5em;
+  }
+  .hero-text {
+    font-size: 1.2em;
+  }
 }
