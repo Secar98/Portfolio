@@ -14,7 +14,7 @@ body {
   align-items: flex-end;
   margin-top: 10px;
   margin-right: 10px;
-  
+
   .fab {
     padding-top: 5px;
     color: $secondary-color;
@@ -71,6 +71,7 @@ body {
       &:hover {
         background-color: $primary-color;
         color: $secondary-color;
+        @include transition-icon;
       }
     }
   }
