@@ -1,5 +1,5 @@
 body {
-  height: 99vh;
+  height: 100vh;
 }
 
 .hero-header {
@@ -10,6 +10,7 @@ body {
   .header-first {
     color: #fff;
     font-style: italic;
+    text-shadow: 2px 2px black;
 
     .yellow-header {
       color: $secondary-color;
@@ -24,6 +25,7 @@ body {
   .paragraph-text {
     text-align: center;
     color: #fff;
+    text-shadow: 2px 2px black;
 
     .yellow-text {
       color: $secondary-color;
@@ -100,6 +102,10 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
+  .hero-header {
+    margin: -30px auto 10px auto;
+  }
+
   .main-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;

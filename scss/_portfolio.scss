@@ -4,13 +4,14 @@ body {
 
 .portfolio-hero-text {
     width: 90%;
-    margin: 10px auto;
+    margin: 5px auto;
 
     .portfolio-text {
         text-align: center;
         color: #fff;
         font-size: 2em;
         font-style: italic;
+        text-shadow: 2px 2px black;
 
         .orange-text {
             color: $secondary-color;
@@ -21,18 +22,10 @@ body {
 .portfolio-projects {
     width: 80%;
     max-width: 400px;
-    margin: 20px auto;
+    margin: 20px auto 50px auto;
   
     .portfolio-project1 {
-      color: black;
-      width: 95%;
-      height: 200px;
-      margin: 50px auto;
-      border: 5px solid $accent-color;
-      width: 100%;
-      background-color: $accent-color;
-      border-radius: 5px;
-      transition: 1s;
+      @include projects;
       
       &:hover {
         transition: 1s;
@@ -41,9 +34,7 @@ body {
   
       .img-projects {
         background-image: url(../img/project_1.jpeg);
-        background-position: center;
-        border-radius: 5px;
-        height: 150px;
+        @include projects-img;
       }
   
       .icons {
@@ -55,15 +46,7 @@ body {
       }
     }
     .portfolio-project2 {
-      color: black;
-      width: 95%;
-      height: 200px;
-      margin: 50px auto;
-      border: 5px solid $accent-color;
-      width: 100%;
-      background-color: $accent-color;
-      border-radius: 5px;
-      transition: 1s;
+     @include projects;
   
       &:hover {
         transition: 1s;
@@ -72,9 +55,7 @@ body {
   
       .img-projects {
         background-image: url(../img/project_2.jpg);
-        background-position: center;
-        border-radius: 5px;
-        height: 150px;
+        @include projects-img;
       }
       .icons {
         margin: 6px auto;
@@ -86,15 +67,7 @@ body {
     }
 
     .portfolio-project3 {
-        color: black;
-        width: 95%;
-        height: 200px;
-        margin: 50px auto;
-        border: 5px solid $accent-color;
-        width: 100%;
-        background-color: $accent-color;
-        border-radius: 5px;
-        transition: 1s;
+        @include projects;
     
         &:hover {
           transition: 1s;
@@ -103,9 +76,7 @@ body {
     
         .img-projects {
           background-image: url(../img/random_project.jpg);
-          background-position: center;
-          border-radius: 5px;
-          height: 150px;
+          @include projects-img;
         }
         .icons {
           margin: 6px auto;
@@ -117,15 +88,7 @@ body {
       }
 
       .portfolio-project4 {
-        color: black;
-        width: 95%;
-        height: 200px;
-        margin: 50px auto;
-        border: 5px solid $accent-color;
-        width: 100%;
-        background-color: $accent-color;
-        border-radius: 5px;
-        transition: 1s;
+        @include projects;
     
         &:hover {
           transition: 1s;
@@ -134,9 +97,7 @@ body {
     
         .img-projects {
           background-image: url(../img/random_project.jpg);
-          background-position: center;
-          border-radius: 5px;
-          height: 150px;
+          @include projects-img;
         }
         .icons {
           margin: 6px auto;
@@ -148,15 +109,7 @@ body {
       }
 
       .portfolio-project5 {
-        color: black;
-        width: 95%;
-        height: 200px;
-        margin: 50px auto;
-        border: 5px solid $accent-color;
-        width: 100%;
-        background-color: $accent-color;
-        border-radius: 5px;
-        transition: 1s;
+        @include projects;
     
         &:hover {
           transition: 1s;
@@ -165,9 +118,7 @@ body {
     
         .img-projects {
           background-image: url(../img/random_project.jpg);
-          background-position: center;
-          border-radius: 5px;
-          height: 150px;
+          @include projects-img;
         }
         .icons {
           margin: 6px auto;
@@ -179,15 +130,7 @@ body {
       }
 
       .portfolio-project6 {
-        color: black;
-        width: 95%;
-        height: 200px;
-        margin: 50px auto;
-        border: 5px solid $accent-color;
-        width: 100%;
-        background-color: $accent-color;
-        border-radius: 5px;
-        transition: 1s;
+        @include projects;
     
         &:hover {
           transition: 1s;
@@ -196,9 +139,7 @@ body {
     
         .img-projects {
           background-image: url(../img/random_project.jpg);
-          background-position: center;
-          border-radius: 5px;
-          height: 150px;
+          @include projects-img;
         }
         .icons {
           margin: 6px auto;
@@ -211,6 +152,9 @@ body {
   }
 
   @media only screen and (min-width: 800px) {
+    .portfolio-hero-text {
+      margin: -60px auto 10px auto;
+    }
       .portfolio-projects {
           display: grid;
           grid-template-columns: repeat(3, 1fr);

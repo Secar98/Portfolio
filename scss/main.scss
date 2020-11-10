@@ -6,6 +6,9 @@
 
 body {
   background-color: $primary-color;
+  background-image: url(../img/Background.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .desktop-icons {

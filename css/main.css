@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 99vh;
+  height: 100vh;
 }
 
 .hero-header {
@@ -17,6 +17,7 @@ body {
 .hero-header .header-first {
   color: #fff;
   font-style: italic;
+  text-shadow: 2px 2px black;
 }
 
 .hero-header .header-first .yellow-header {
@@ -32,6 +33,7 @@ body {
 .hero-text .paragraph-text {
   text-align: center;
   color: #fff;
+  text-shadow: 2px 2px black;
 }
 
 .hero-text .paragraph-text .yellow-text {
@@ -115,6 +117,9 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
+  .hero-header {
+    margin: -30px auto 10px auto;
+  }
   .main-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,12 +135,63 @@ body {
 }
 
 body {
+  height: 99vh;
+}
+
+.education-text {
+  width: 90%;
+  margin: 10px auto 50px auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.education-text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5em;
+  text-shadow: 2px 2px black;
+}
+
+.education-text h1 span {
+  color: orange;
+}
+
+.education-text h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.education-text h2 span {
+  color: orange;
+}
+
+.education-text p {
+  color: #fff;
+  font-size: 1.5em;
+  padding: 10px;
+  text-shadow: 2px 2px black;
+}
+
+.education-text p span {
+  color: orange;
+}
+
+@media only screen and (min-width: 800px) {
+  .education-text {
+    margin: -60px auto 20px auto;
+  }
+}
+
+body {
   height: 100vh;
 }
 
 .portfolio-hero-text {
   width: 90%;
-  margin: 10px auto;
+  margin: 5px auto;
 }
 
 .portfolio-hero-text .portfolio-text {
@@ -143,6 +199,7 @@ body {
   color: #fff;
   font-size: 2em;
   font-style: italic;
+  text-shadow: 2px 2px black;
 }
 
 .portfolio-hero-text .portfolio-text .orange-text {
@@ -152,7 +209,7 @@ body {
 .portfolio-projects {
   width: 80%;
   max-width: 400px;
-  margin: 20px auto;
+  margin: 20px auto 50px auto;
 }
 
 .portfolio-projects .portfolio-project1 {
@@ -366,6 +423,9 @@ body {
 }
 
 @media only screen and (min-width: 800px) {
+  .portfolio-hero-text {
+    margin: -60px auto 10px auto;
+  }
   .portfolio-projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -381,6 +441,9 @@ body {
 
 body {
   background-color: #1b1b1b;
+  background-image: url(../img/Background.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .desktop-icons {
