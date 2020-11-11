@@ -8,9 +8,9 @@ body {
   text-align: center;
 
   .header-first {
-    color: #fff;
+    color: black;
     font-style: italic;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px #fff;
 
     .yellow-header {
       color: $secondary-color;
@@ -20,15 +20,16 @@ body {
 .hero-text {
   width: 60%;
   margin: 5px auto;
-  font-size: 1em;
+  font-size: 1.2em;
 
   .paragraph-text {
     text-align: center;
-    color: #fff;
-    text-shadow: 2px 2px black;
+    color: black;
+    text-shadow: 2px 2px #fff;
 
     .yellow-text {
       color: $secondary-color;
+      text-shadow: 2px 2px black;
     }
   }
 }

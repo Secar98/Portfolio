@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -15,9 +15,9 @@ body {
 }
 
 .hero-header .header-first {
-  color: #fff;
+  color: black;
   font-style: italic;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px #fff;
 }
 
 .hero-header .header-first .yellow-header {
@@ -27,17 +27,18 @@ body {
 .hero-text {
   width: 60%;
   margin: 5px auto;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .hero-text .paragraph-text {
   text-align: center;
-  color: #fff;
-  text-shadow: 2px 2px black;
+  color: black;
+  text-shadow: 2px 2px #fff;
 }
 
 .hero-text .paragraph-text .yellow-text {
   color: orange;
+  text-shadow: 2px 2px black;
 }
 
 .main-projects {
@@ -185,6 +186,116 @@ body {
   }
 }
 
+.contact-text {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px black;
+}
+
+.contact-text span {
+  color: orange;
+}
+
+.contact-picture {
+  margin: 10px auto;
+  min-height: 500px;
+  max-width: 400px;
+  background-image: url(../img/Bild_sebastian.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.contact-form {
+  background-color: orange;
+  padding: 10px;
+  margin: 10px auto 40px auto;
+  width: 90%;
+}
+
+.contact-form ul {
+  list-style-type: none;
+}
+
+.contact-form ul li {
+  color: #fff;
+  text-shadow: 2px 2px black;
+  font-size: 1.5em;
+}
+
+.contact-form .input-form {
+  margin: 40px auto 5px auto;
+  color: #fff;
+  text-shadow: 2px 2px black;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .input-form input {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: orange;
+  font-size: 1.2em;
+}
+
+.contact-form .input-form input:focus {
+  outline: none;
+}
+
+.contact-form .input-form textarea {
+  font-size: 1.2em;
+  resize: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.contact-form .input-form button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 30px;
+  color: #fff;
+  font-size: 1.3em;
+  background-color: black;
+}
+
+@media only screen and (min-width: 800px) {
+  .contact-text {
+    font-size: 1.5em;
+    margin: -60px auto 20px auto;
+  }
+  .contact-content {
+    width: 95%;
+    margin: 100px auto 20px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "pic form form" "pic form form";
+  }
+  .contact-content .contact-picture {
+    grid-area: pic;
+    margin: 10px auto;
+    max-height: 500px;
+    width: 100%;
+    background-image: url(../img/Bild_sebastian.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+  }
+  .contact-content .contact-form {
+    grid-area: form;
+    width: 100%;
+    min-height: 480px;
+    max-height: 600px;
+  }
+}
+
 body {
   height: 100vh;
 }
@@ -213,9 +324,10 @@ body {
 }
 
 .portfolio-projects .portfolio-project1 {
+  cursor: pointer;
   color: black;
-  width: 95%;
   height: 200px;
+  max-width: 450px;
   margin: 50px auto;
   border: 5px solid orange;
   width: 100%;
@@ -248,9 +360,10 @@ body {
 }
 
 .portfolio-projects .portfolio-project2 {
+  cursor: pointer;
   color: black;
-  width: 95%;
   height: 200px;
+  max-width: 450px;
   margin: 50px auto;
   border: 5px solid orange;
   width: 100%;
@@ -283,9 +396,10 @@ body {
 }
 
 .portfolio-projects .portfolio-project3 {
+  cursor: pointer;
   color: black;
-  width: 95%;
   height: 200px;
+  max-width: 450px;
   margin: 50px auto;
   border: 5px solid orange;
   width: 100%;
@@ -318,9 +432,10 @@ body {
 }
 
 .portfolio-projects .portfolio-project4 {
+  cursor: pointer;
   color: black;
-  width: 95%;
   height: 200px;
+  max-width: 450px;
   margin: 50px auto;
   border: 5px solid orange;
   width: 100%;
@@ -353,9 +468,10 @@ body {
 }
 
 .portfolio-projects .portfolio-project5 {
+  cursor: pointer;
   color: black;
-  width: 95%;
   height: 200px;
+  max-width: 450px;
   margin: 50px auto;
   border: 5px solid orange;
   width: 100%;
@@ -388,9 +504,10 @@ body {
 }
 
 .portfolio-projects .portfolio-project6 {
+  cursor: pointer;
   color: black;
-  width: 95%;
   height: 200px;
+  max-width: 450px;
   margin: 50px auto;
   border: 5px solid orange;
   width: 100%;
@@ -424,7 +541,7 @@ body {
 
 @media only screen and (min-width: 800px) {
   .portfolio-hero-text {
-    margin: -60px auto 10px auto;
+    margin: -60px auto 100px auto;
   }
   .portfolio-projects {
     display: grid;
@@ -435,7 +552,7 @@ body {
     width: 90%;
   }
   .portfolio-projects .portfolio-project1, .portfolio-projects .portfolio-project2, .portfolio-projects .portfolio-project3, .portfolio-projects .portfolio-project4, .portfolio-projects .portfolio-project5, .portfolio-projects .portfolio-project6 {
-    margin: 10px auto;
+    margin: 30px auto;
   }
 }
 

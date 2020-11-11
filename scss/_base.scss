@@ -13,9 +13,10 @@ $accent-color: orange;
   transition: 0.5s;
 }
 @mixin projects {
+  cursor: pointer;
   color: black;
-  width: 95%;
   height: 200px;
+  max-width: 450px;
   margin: 50px auto;
   border: 5px solid $accent-color;
   width: 100%;
