@@ -8,9 +8,9 @@ body {
   text-align: center;
 
   .header-first {
-    color: black;
+    color: #fff;
     font-style: italic;
-    text-shadow: 2px 2px #fff;
+    text-shadow: 2px 2px black;
 
     .yellow-header {
       color: $secondary-color;
@@ -24,8 +24,8 @@ body {
 
   .paragraph-text {
     text-align: center;
-    color: black;
-    text-shadow: 2px 2px #fff;
+    color: #fff;
+    text-shadow: 2px 2px black;
 
     .yellow-text {
       color: $secondary-color;

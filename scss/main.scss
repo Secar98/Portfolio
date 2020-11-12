@@ -6,7 +6,6 @@
 
 body {
   background-color: $primary-color;
-  background-image: url(../img/Background.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -20,7 +19,7 @@ body {
 
   .fab {
     padding-top: 5px;
-    color: $secondary-color;
+    color: black;
 
     &:hover {
       @include transition-icon;
