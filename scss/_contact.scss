@@ -13,7 +13,7 @@
 .contact-picture {
     margin: 10px auto;
     min-height: 500px;
-    max-width: 400px;
+    max-width: 455px;
     background-image: url(../img/Bild_sebastian.jpg);
     background-position: center;
     background-size: cover;
@@ -32,10 +32,8 @@
     list-style-type: none;
 
     li {
-    
         color: #fff;
         text-shadow: 2px 2px black;
-        font-size: 1.2em;
       }
   }
 
@@ -133,7 +131,12 @@
             max-height: 600px;
             max-width: 1200px;
             border-radius: 5px;
-           
+
+            ul {
+              li {
+                font-size: 1.5em;
+              }
+            }           
         }
     }
     

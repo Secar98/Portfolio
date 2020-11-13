@@ -26,9 +26,9 @@ body {
 }
 
 .hero-text {
-  width: 50%;
+  width: 60%;
   margin: 5px auto;
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .hero-text .paragraph-text {
@@ -215,6 +215,9 @@ body {
   .education-text {
     margin: -60px auto 20px auto;
   }
+  .education-text .nackademin-link {
+    margin-top: 80px;
+  }
 }
 
 .contact-text {
@@ -232,7 +235,7 @@ body {
 .contact-picture {
   margin: 10px auto;
   min-height: 500px;
-  max-width: 400px;
+  max-width: 455px;
   background-image: url(../img/Bild_sebastian.jpg);
   background-position: center;
   background-size: cover;
@@ -255,7 +258,6 @@ body {
 .contact-form ul li {
   color: #fff;
   text-shadow: 2px 2px black;
-  font-size: 1.2em;
 }
 
 .contact-form .input-form {
@@ -343,6 +345,9 @@ body {
     max-height: 600px;
     max-width: 1200px;
     border-radius: 5px;
+  }
+  .contact-content .contact-form ul li {
+    font-size: 1.5em;
   }
 }
 
