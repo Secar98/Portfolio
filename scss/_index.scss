@@ -13,23 +13,22 @@ body {
     text-shadow: 2px 2px black;
 
     .yellow-header {
-      color: $secondary-color;
+      color: $accent-color;
     }
   }
 }
 .hero-text {
-  width: 60%;
+  width: 50%;
   margin: 5px auto;
   font-size: 1.2em;
 
   .paragraph-text {
     text-align: center;
     color: #fff;
-    text-shadow: 2px 2px black;
 
-    .yellow-text {
-      color: $secondary-color;
-      text-shadow: 2px 2px black;
+    span {
+      color: $accent-color;
+      text-shadow: 1px 1px black;
     }
   }
 }
@@ -40,7 +39,8 @@ body {
   margin: 20px auto;
 
   .projects1 {
-    color: black;
+    color: #fff;
+    text-shadow: 2px 1px #000;
     width: 95%;
     height: 200px;
     margin: 50px auto;
@@ -68,10 +68,12 @@ body {
     .fas:hover,
     .fab:hover {
       @include transition-icon;
+      color: $primary-color;
     }
   }
   .projects2 {
-    color: black;
+    color: #fff;
+    text-shadow: 2px 1px #000;
     width: 95%;
     height: 200px;
     margin: 50px auto;
@@ -98,6 +100,7 @@ body {
     .fas:hover,
     .fab:hover {
       @include transition-icon;
+      color: $primary-color;
     }
   }
 }
@@ -118,6 +121,7 @@ body {
     font-size: 1.5em;
   }
   .hero-text {
+    margin: 40px auto 20px auto;
     font-size: 1.2em;
   }
 }

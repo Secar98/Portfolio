@@ -2,10 +2,11 @@
     margin-top: 20px;
   text-align: center;
   color: #fff;
+  font-style: italic;
   text-shadow: 2px 2px black;
 
   span {
-    color: $secondary-color;
+    color: $accent-color;
   }
 }
 
@@ -34,7 +35,7 @@
     
         color: #fff;
         text-shadow: 2px 2px black;
-        font-size: 1.5em;
+        font-size: 1.2em;
       }
   }
 
@@ -55,6 +56,7 @@
 
       &:focus {
         outline: none;
+        background-color: $accent-color;
       }
     }
 
@@ -64,18 +66,30 @@
       border: none;
       background-color: rgba(0, 0, 0, 0.2);
       border-radius: 5px;
+
+      &:focus {
+        outline: none;
+        background-color: $accent-color;
+      }
     }
 
     button {
       display: block;
       cursor: pointer;
-      border: none;
+      border: 1px solid black;
       border-radius: 5px;
       margin-top: 10px;
-      height: 30px;
+      height: 50px;
+      width: 100px;
       color: #fff;
       font-size: 1.3em;
       background-color: black;
+      transition: 1s;
+
+      &:hover {
+        background-color: $accent-color;
+        transition: 1s;
+      }
     }
   }
 }
@@ -90,7 +104,7 @@
 
     .contact-content {
         width: 95%;
-        margin: 100px auto 20px auto;
+        margin: auto;
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -118,6 +132,7 @@
             min-height: 480px;
             max-height: 600px;
             max-width: 1200px;
+            border-radius: 5px;
            
         }
     }

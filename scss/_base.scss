@@ -1,22 +1,22 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Code Pro', monospace;;
 }
-$primary-color: #214252;
+$primary-color: #10111d;
 /*$primary-color: #1b1b1b;*/
 $secondary-color: #f05454;
-$accent-color: #af2d2d;
+$accent-color: #d43b3b;
 
 @mixin transition-icon {
-  color: #ce6262;
+  color: $accent-color;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
 }
 @mixin projects {
   cursor: pointer;
-  color: black;
+  color: #fff;
   height: 200px;
   max-width: 450px;
   margin: 50px auto;

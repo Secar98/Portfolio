@@ -19,10 +19,11 @@ body {
 
   .fab {
     padding-top: 5px;
-    color: black;
+    color:$secondary-color;
 
     &:hover {
       @include transition-icon;
+      color: #fff;
     }
   }
 }
@@ -64,7 +65,7 @@ body {
     z-index: 1;
 
     a {
-      color: black;
+      color: #fff;
       font-size: 0.5em;
       padding: 12px 16px;
       text-decoration: none;
@@ -73,7 +74,6 @@ body {
       &:hover {
         background-color: $primary-color;
         color: $secondary-color;
-        @include transition-icon;
       }
     }
   }
@@ -96,8 +96,9 @@ body {
     a {
       padding-left: 10px;
       text-decoration: none;
-      color: black;
-      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 2px 2px black;
+      font-size: 2em;
       font-weight: 500;
 
       &:hover {

@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 /*$primary-color: #1b1b1b;*/
@@ -22,11 +22,11 @@ body {
 }
 
 .hero-header .header-first .yellow-header {
-  color: #f05454;
+  color: #d43b3b;
 }
 
 .hero-text {
-  width: 60%;
+  width: 50%;
   margin: 5px auto;
   font-size: 1.2em;
 }
@@ -34,12 +34,11 @@ body {
 .hero-text .paragraph-text {
   text-align: center;
   color: #fff;
-  text-shadow: 2px 2px black;
 }
 
-.hero-text .paragraph-text .yellow-text {
-  color: #f05454;
-  text-shadow: 2px 2px black;
+.hero-text .paragraph-text span {
+  color: #d43b3b;
+  text-shadow: 1px 1px black;
 }
 
 .main-projects {
@@ -49,13 +48,14 @@ body {
 }
 
 .main-projects .projects1 {
-  color: black;
+  color: #fff;
+  text-shadow: 2px 1px #000;
   width: 95%;
   height: 200px;
   margin: 50px auto;
-  border: 5px solid #af2d2d;
+  border: 5px solid #d43b3b;
   width: 100%;
-  background-color: #af2d2d;
+  background-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
@@ -78,20 +78,22 @@ body {
 
 .main-projects .projects1 .fas:hover,
 .main-projects .projects1 .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #10111d;
 }
 
 .main-projects .projects2 {
-  color: black;
+  color: #fff;
+  text-shadow: 2px 1px #000;
   width: 95%;
   height: 200px;
   margin: 50px auto;
-  border: 5px solid #af2d2d;
+  border: 5px solid #d43b3b;
   width: 100%;
-  background-color: #af2d2d;
+  background-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
@@ -114,10 +116,11 @@ body {
 
 .main-projects .projects2 .fas:hover,
 .main-projects .projects2 .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #10111d;
 }
 
 @media only screen and (min-width: 800px) {
@@ -134,6 +137,7 @@ body {
     font-size: 1.5em;
   }
   .hero-text {
+    margin: 40px auto 20px auto;
     font-size: 1.2em;
   }
 }
@@ -154,10 +158,11 @@ body {
   text-align: center;
   font-size: 2.5em;
   text-shadow: 2px 2px black;
+  font-style: italic;
 }
 
 .education-text h1 span {
-  color: #f05454;
+  color: #d43b3b;
 }
 
 .education-text h2 {
@@ -166,21 +171,44 @@ body {
   font-size: 1.8em;
   margin-bottom: 20px;
   text-shadow: 2px 2px black;
+  font-style: italic;
 }
 
 .education-text h2 span {
-  color: #f05454;
+  color: #d43b3b;
 }
 
 .education-text p {
   color: #fff;
   font-size: 1.5em;
   padding: 10px;
-  text-shadow: 2px 2px black;
+  text-shadow: 1px 1px black;
 }
 
 .education-text p span {
-  color: #f05454;
+  color: #d43b3b;
+}
+
+.education-text .nackademin-link {
+  font-size: 2em;
+  transition: 1s;
+  margin-top: 20px;
+}
+
+.education-text .nackademin-link:hover {
+  font-size: 2.5em;
+  transition: 1s;
+}
+
+.education-text .nackademin-link a {
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+  text-decoration: underline #d43b3b;
+}
+
+.education-text .nackademin-link a span {
+  color: #d43b3b;
 }
 
 @media only screen and (min-width: 800px) {
@@ -193,11 +221,12 @@ body {
   margin-top: 20px;
   text-align: center;
   color: #fff;
+  font-style: italic;
   text-shadow: 2px 2px black;
 }
 
 .contact-text span {
-  color: #f05454;
+  color: #d43b3b;
 }
 
 .contact-picture {
@@ -226,7 +255,7 @@ body {
 .contact-form ul li {
   color: #fff;
   text-shadow: 2px 2px black;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .contact-form .input-form {
@@ -247,6 +276,7 @@ body {
 
 .contact-form .input-form input:focus {
   outline: none;
+  background-color: #d43b3b;
 }
 
 .contact-form .input-form textarea {
@@ -257,16 +287,28 @@ body {
   border-radius: 5px;
 }
 
+.contact-form .input-form textarea:focus {
+  outline: none;
+  background-color: #d43b3b;
+}
+
 .contact-form .input-form button {
   display: block;
   cursor: pointer;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
   margin-top: 10px;
-  height: 30px;
+  height: 50px;
+  width: 100px;
   color: #fff;
   font-size: 1.3em;
   background-color: black;
+  transition: 1s;
+}
+
+.contact-form .input-form button:hover {
+  background-color: #d43b3b;
+  transition: 1s;
 }
 
 @media only screen and (min-width: 800px) {
@@ -276,7 +318,7 @@ body {
   }
   .contact-content {
     width: 95%;
-    margin: 100px auto 20px auto;
+    margin: auto;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -300,6 +342,7 @@ body {
     min-height: 480px;
     max-height: 600px;
     max-width: 1200px;
+    border-radius: 5px;
   }
 }
 
@@ -321,7 +364,7 @@ body {
 }
 
 .portfolio-hero-text .portfolio-text .orange-text {
-  color: #f05454;
+  color: #d43b3b;
 }
 
 .portfolio-projects {
@@ -332,13 +375,13 @@ body {
 
 .portfolio-projects .portfolio-project1 {
   cursor: pointer;
-  color: black;
+  color: #fff;
   height: 200px;
   max-width: 450px;
   margin: 50px auto;
-  border: 5px solid #af2d2d;
+  border: 5px solid #d43b3b;
   width: 100%;
-  background-color: #af2d2d;
+  background-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
@@ -361,21 +404,22 @@ body {
 
 .portfolio-projects .portfolio-project1 .fas:hover,
 .portfolio-projects .portfolio-project1 .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #10111d;
 }
 
 .portfolio-projects .portfolio-project2 {
   cursor: pointer;
-  color: black;
+  color: #fff;
   height: 200px;
   max-width: 450px;
   margin: 50px auto;
-  border: 5px solid #af2d2d;
+  border: 5px solid #d43b3b;
   width: 100%;
-  background-color: #af2d2d;
+  background-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
@@ -398,21 +442,22 @@ body {
 
 .portfolio-projects .portfolio-project2 .fas:hover,
 .portfolio-projects .portfolio-project2 .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #10111d;
 }
 
 .portfolio-projects .portfolio-project3 {
   cursor: pointer;
-  color: black;
+  color: #fff;
   height: 200px;
   max-width: 450px;
   margin: 50px auto;
-  border: 5px solid #af2d2d;
+  border: 5px solid #d43b3b;
   width: 100%;
-  background-color: #af2d2d;
+  background-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
@@ -435,21 +480,22 @@ body {
 
 .portfolio-projects .portfolio-project3 .fas:hover,
 .portfolio-projects .portfolio-project3 .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #10111d;
 }
 
 .portfolio-projects .portfolio-project4 {
   cursor: pointer;
-  color: black;
+  color: #fff;
   height: 200px;
   max-width: 450px;
   margin: 50px auto;
-  border: 5px solid #af2d2d;
+  border: 5px solid #d43b3b;
   width: 100%;
-  background-color: #af2d2d;
+  background-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
@@ -472,21 +518,22 @@ body {
 
 .portfolio-projects .portfolio-project4 .fas:hover,
 .portfolio-projects .portfolio-project4 .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #10111d;
 }
 
 .portfolio-projects .portfolio-project5 {
   cursor: pointer;
-  color: black;
+  color: #fff;
   height: 200px;
   max-width: 450px;
   margin: 50px auto;
-  border: 5px solid #af2d2d;
+  border: 5px solid #d43b3b;
   width: 100%;
-  background-color: #af2d2d;
+  background-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
@@ -509,21 +556,22 @@ body {
 
 .portfolio-projects .portfolio-project5 .fas:hover,
 .portfolio-projects .portfolio-project5 .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #10111d;
 }
 
 .portfolio-projects .portfolio-project6 {
   cursor: pointer;
-  color: black;
+  color: #fff;
   height: 200px;
   max-width: 450px;
   margin: 50px auto;
-  border: 5px solid #af2d2d;
+  border: 5px solid #d43b3b;
   width: 100%;
-  background-color: #af2d2d;
+  background-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
@@ -546,10 +594,11 @@ body {
 
 .portfolio-projects .portfolio-project6 .fas:hover,
 .portfolio-projects .portfolio-project6 .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #10111d;
 }
 
 @media only screen and (min-width: 800px) {
@@ -560,17 +609,17 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1800px;
-    margin: 5px auto;
+    margin: auto;
     gap: 50px;
     width: 90%;
   }
   .portfolio-projects .portfolio-project1, .portfolio-projects .portfolio-project2, .portfolio-projects .portfolio-project3, .portfolio-projects .portfolio-project4, .portfolio-projects .portfolio-project5, .portfolio-projects .portfolio-project6 {
-    margin: 30px auto;
+    margin: auto;
   }
 }
 
 body {
-  background-color: #214252;
+  background-color: #10111d;
   background-position: center;
   background-size: cover;
 }
@@ -585,14 +634,15 @@ body {
 
 .desktop-icons .fab {
   padding-top: 5px;
-  color: black;
+  color: #f05454;
 }
 
 .desktop-icons .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
+  color: #fff;
 }
 
 .mobile {
@@ -614,7 +664,7 @@ body {
 
 .mobile .fas:hover,
 .mobile .fab:hover {
-  color: #ce6262;
+  color: #d43b3b;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
@@ -637,7 +687,7 @@ body {
 }
 
 .mobile .dropup-content a {
-  color: black;
+  color: #fff;
   font-size: 0.5em;
   padding: 12px 16px;
   text-decoration: none;
@@ -645,12 +695,8 @@ body {
 }
 
 .mobile .dropup-content a:hover {
-  background-color: #214252;
+  background-color: #10111d;
   color: #f05454;
-  color: #ce6262;
-  text-shadow: 2px 2px black;
-  cursor: pointer;
-  transition: 0.5s;
 }
 
 .mobile .right-nav:hover .dropup-content {
@@ -670,12 +716,13 @@ body {
   .desktop a {
     padding-left: 10px;
     text-decoration: none;
-    color: black;
-    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 2px 2px black;
+    font-size: 2em;
     font-weight: 500;
   }
   .desktop a:hover {
-    color: #ce6262;
+    color: #d43b3b;
     text-shadow: 2px 2px black;
     cursor: pointer;
     transition: 0.5s;
