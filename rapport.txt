@@ -1,4 +1,5 @@
 Rapport Sebastian Carlson
+Google docs: https://docs.google.com/document/d/1K5EVTH-V3_KoKesndorw6WwL2n_Ju9TgvGU5I0DxEcc/edit?usp=sharing
 
 Tillgänglighet:
 På portfolio/CV sidan som jag har skapat, så har jag implementerat några olika tillgänglighetskrav, från www.w3.org. Det är bland annat:
