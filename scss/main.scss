@@ -6,11 +6,10 @@
 
 body {
   background-color: $primary-color;
-  background-position: center;
-  background-size: cover;
 }
 
 .desktop-icons {
+  // positioning the desktop icons
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -18,10 +17,13 @@ body {
   margin-right: 10px;
 
   .fab {
+    // changing the icons color and adding a padding
     padding-top: 5px;
-    color:$secondary-color;
+    color: $secondary-color;
 
     &:hover {
+      // when hovering over the icons changing the color and includes
+      // the mixin transition icon
       @include transition-icon;
       color: #fff;
     }
@@ -29,6 +31,9 @@ body {
 }
 
 .mobile {
+  // positioning the mobile navigation with css grid
+  // at the bottom with 1fraction for the icons and
+  // 1fraction for the hamburger menu
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: $secondary-color;
@@ -44,17 +49,21 @@ body {
     }
   }
 
+  // adding a hover effect for the icons with the
+  // mixin transition-icon
   .fas:hover,
   .fab:hover {
     @include transition-icon;
   }
 
+  // placeing the hamburger menu on the rigth side of the screen
   .right-nav {
     display: grid;
     justify-content: end;
     margin-right: 15px;
   }
 
+  // the div that appears after hovering the hamburger menu
   .dropup-content {
     display: none;
     position: absolute;
@@ -65,6 +74,7 @@ body {
     z-index: 1;
 
     a {
+      // styiling the links within the hmburger menu
       color: #fff;
       font-size: 0.5em;
       padding: 12px 16px;
@@ -72,6 +82,7 @@ body {
       display: block;
 
       &:hover {
+        // adding a hover effect on the links
         background-color: $primary-color;
         color: $secondary-color;
       }
@@ -79,6 +90,8 @@ body {
   }
 
   .right-nav:hover .dropup-content {
+    //when the hamburger menu is moused over, changing the
+    // display from "none" to "block" which makes it appear
     display: block;
     background-color: $secondary-color;
   }
@@ -88,12 +101,15 @@ body {
   }
 }
 
+// when the screen is bigger than 800px
 @media only screen and (min-width: 800px) {
   .desktop {
+    // styling the desktop navigation
     background-color: $secondary-color;
     padding-left: 10px;
 
     a {
+      // styling the links within the desktop navigation
       padding-left: 10px;
       text-decoration: none;
       color: #fff;
@@ -102,11 +118,13 @@ body {
       font-weight: 500;
 
       &:hover {
+        // adding the mixin when mousing over the navigation links
         @include transition-icon;
       }
     }
 
     .right-desktop-nav {
+      // placing the contact me link on the right side
       float: right;
       padding-right: 10px;
     }
@@ -114,5 +132,6 @@ body {
 }
 
 .hide {
+  // class that is used whitin the javascript
   display: none;
 }

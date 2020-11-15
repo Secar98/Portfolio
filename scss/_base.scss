@@ -1,19 +1,25 @@
 * {
+  // styling the whole website
   padding: 0;
   margin: 0;
-  font-family: 'Source Code Pro', monospace;;
+  font-family: "Source Code Pro", monospace;
 }
+
+// makeing some variable colors for the site
 $primary-color: #10111d;
-/*$primary-color: #1b1b1b;*/
 $secondary-color: #f05454;
 $accent-color: #d43b3b;
 
+// makeing a mixin for the icons with a new color and a transition
 @mixin transition-icon {
   color: $accent-color;
   text-shadow: 2px 2px black;
   cursor: pointer;
   transition: 0.5s;
 }
+
+// makeing a mixin for all the projects on the portfolio
+// page so I dont have to retype everthing
 @mixin projects {
   cursor: pointer;
   color: #fff;
@@ -26,6 +32,8 @@ $accent-color: #d43b3b;
   border-radius: 5px;
   transition: 1s;
 }
+
+// makeing a mixin for the images on the portfolio page
 @mixin projects-img {
   background-position: center;
   border-radius: 5px;

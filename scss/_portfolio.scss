@@ -1,177 +1,207 @@
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
+// styleing the div on the portfolio page
 .portfolio-hero-text {
-    width: 90%;
-    margin: 5px auto;
+  width: 90%;
+  margin: 5px auto;
 
-    .portfolio-text {
-        text-align: center;
-        color: #fff;
-        font-size: 2em;
-        font-style: italic;
-        text-shadow: 2px 2px black;
+  // styling the text whitin the div on the portfolio page
+  .portfolio-text {
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-style: italic;
+    text-shadow: 2px 2px black;
 
-        .orange-text {
-            color: $accent-color;
-        }
+    span {
+      color: $accent-color;
     }
+  }
 }
 
+// positioning the projects divs
 .portfolio-projects {
-    width: 80%;
-    max-width: 400px;
-    margin: 20px auto 50px auto;
-  
-    .portfolio-project1 {
-      @include projects;
-      
-      &:hover {
-        transition: 1s;
-        transform: scale(1.1);
-      }
-  
-      .img-projects {
-        background-image: url(../img/project_1.jpeg);
-        @include projects-img;
-      }
-  
-      .icons {
-        margin: 6px auto;
-      }
-      .fas:hover,
-      .fab:hover {
-        @include transition-icon;
-        color: $primary-color;
-      }
-    }
-    .portfolio-project2 {
-     @include projects;
-  
-      &:hover {
-        transition: 1s;
-        transform: scale(1.1);
-      }
-  
-      .img-projects {
-        background-image: url(../img/project_2.jpg);
-        @include projects-img;
-      }
-      .icons {
-        margin: 6px auto;
-      }
-      .fas:hover,
-      .fab:hover {
-        @include transition-icon;
-        color: $primary-color;
-      }
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto 50px auto;
+
+  // using the mixin from the _base.scss
+  .portfolio-project1 {
+    @include projects;
+
+    // adding a hover effect that scales the div to 1.1
+    // instead of 1 and adding a transition
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
     }
 
-    .portfolio-project3 {
-        @include projects;
-    
-        &:hover {
-          transition: 1s;
-          transform: scale(1.1);
-        }
-    
-        .img-projects {
-          background-image: url(../img/random_project.jpg);
-          @include projects-img;
-        }
-        .icons {
-          margin: 6px auto;
-        }
-        .fas:hover,
-        .fab:hover {
-          @include transition-icon;
-          color: $primary-color;
-        }
-      }
+    // changing the image of the project div
+    // and adding the mixin from the _base.scss
+    .img-projects {
+      background-image: url(../img/project_1.jpeg);
+      @include projects-img;
+    }
 
-      .portfolio-project4 {
-        @include projects;
-    
-        &:hover {
-          transition: 1s;
-          transform: scale(1.1);
-        }
-    
-        .img-projects {
-          background-image: url(../img/random_project.jpg);
-          @include projects-img;
-        }
-        .icons {
-          margin: 6px auto;
-        }
-        .fas:hover,
-        .fab:hover {
-          @include transition-icon;
-          color: $primary-color;
-        }
-      }
+    .icons {
+      margin: 6px auto;
+    }
 
-      .portfolio-project5 {
-        @include projects;
-    
-        &:hover {
-          transition: 1s;
-          transform: scale(1.1);
-        }
-    
-        .img-projects {
-          background-image: url(../img/random_project.jpg);
-          @include projects-img;
-        }
-        .icons {
-          margin: 6px auto;
-        }
-        .fas:hover,
-        .fab:hover {
-          @include transition-icon;
-          color: $primary-color;
-        }
-      }
+    // adding a hover effect on the icons of the project
+    // div and changing the color
+    .fas:hover,
+    .fab:hover {
+      @include transition-icon;
+      color: $primary-color;
+    }
+  }
+  // same code as .portfolio-projects1 exept for
+  // the img projects which have a different image
+  .portfolio-project2 {
+    @include projects;
 
-      .portfolio-project6 {
-        @include projects;
-    
-        &:hover {
-          transition: 1s;
-          transform: scale(1.1);
-        }
-    
-        .img-projects {
-          background-image: url(../img/random_project.jpg);
-          @include projects-img;
-        }
-        .icons {
-          margin: 6px auto;
-        }
-        .fas:hover,
-        .fab:hover {
-          @include transition-icon;
-          color: $primary-color;
-        }
-      }
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
+    }
+
+    .img-projects {
+      background-image: url(../img/project_2.jpg);
+      @include projects-img;
+    }
+    .icons {
+      margin: 6px auto;
+    }
+    .fas:hover,
+    .fab:hover {
+      @include transition-icon;
+      color: $primary-color;
+    }
   }
 
-  @media only screen and (min-width: 800px) {
-    .portfolio-hero-text {
-      margin: -60px auto 50px auto;
+  // same code as .portfolio-projects1 exept for
+  // the img projects which have a different image
+  .portfolio-project3 {
+    @include projects;
+
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
     }
-      .portfolio-projects {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          max-width: 1800px;
-          margin: auto;
-          gap: 50px; 
-          width: 90%;
 
-          .portfolio-project1, .portfolio-project2, .portfolio-project3, .portfolio-project4, .portfolio-project5,.portfolio-project6 {
-            margin: auto;
-          }
-
-      }
+    .img-projects {
+      background-image: url(../img/random_project.jpg);
+      @include projects-img;
+    }
+    .icons {
+      margin: 6px auto;
+    }
+    .fas:hover,
+    .fab:hover {
+      @include transition-icon;
+      color: $primary-color;
+    }
   }
+
+  // same code as .portfolio-projects1 exept for
+  // the img projects which have a different image
+  .portfolio-project4 {
+    @include projects;
+
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
+    }
+
+    .img-projects {
+      background-image: url(../img/random_project.jpg);
+      @include projects-img;
+    }
+    .icons {
+      margin: 6px auto;
+    }
+    .fas:hover,
+    .fab:hover {
+      @include transition-icon;
+      color: $primary-color;
+    }
+  }
+
+  // same code as .portfolio-projects1 exept for
+  // the img projects which have a different image
+  .portfolio-project5 {
+    @include projects;
+
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
+    }
+
+    .img-projects {
+      background-image: url(../img/random_project.jpg);
+      @include projects-img;
+    }
+    .icons {
+      margin: 6px auto;
+    }
+    .fas:hover,
+    .fab:hover {
+      @include transition-icon;
+      color: $primary-color;
+    }
+  }
+
+  // same code as .portfolio-projects1 exept for
+  // the img projects which have a different image
+  .portfolio-project6 {
+    @include projects;
+
+    &:hover {
+      transition: 1s;
+      transform: scale(1.1);
+    }
+
+    .img-projects {
+      background-image: url(../img/random_project.jpg);
+      @include projects-img;
+    }
+    .icons {
+      margin: 6px auto;
+    }
+    .fas:hover,
+    .fab:hover {
+      @include transition-icon;
+      color: $primary-color;
+    }
+  }
+}
+
+// when the screen is bigger than 800px
+@media only screen and (min-width: 800px) {
+  // positioning the the text on the portfolio page
+  .portfolio-hero-text {
+    margin: -60px auto 50px auto;
+  }
+
+  // displaying all the projects on the portfolio page
+  // in a grid  that is 3 fractions of the screen big
+  .portfolio-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1800px;
+    margin: auto;
+    gap: 50px;
+    width: 90%;
+
+    .portfolio-project1,
+    .portfolio-project2,
+    .portfolio-project3,
+    .portfolio-project4,
+    .portfolio-project5,
+    .portfolio-project6 {
+      margin: auto;
+    }
+  }
+}

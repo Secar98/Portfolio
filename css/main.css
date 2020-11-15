@@ -1,10 +1,9 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 }
 
-/*$primary-color: #1b1b1b;*/
 body {
   height: 100vh;
 }
@@ -21,7 +20,7 @@ body {
   text-shadow: 2px 2px black;
 }
 
-.hero-header .header-first .yellow-header {
+.hero-header .header-first span {
   color: #d43b3b;
 }
 
@@ -368,7 +367,7 @@ body {
   text-shadow: 2px 2px black;
 }
 
-.portfolio-hero-text .portfolio-text .orange-text {
+.portfolio-hero-text .portfolio-text span {
   color: #d43b3b;
 }
 
@@ -618,15 +617,18 @@ body {
     gap: 50px;
     width: 90%;
   }
-  .portfolio-projects .portfolio-project1, .portfolio-projects .portfolio-project2, .portfolio-projects .portfolio-project3, .portfolio-projects .portfolio-project4, .portfolio-projects .portfolio-project5, .portfolio-projects .portfolio-project6 {
+  .portfolio-projects .portfolio-project1,
+  .portfolio-projects .portfolio-project2,
+  .portfolio-projects .portfolio-project3,
+  .portfolio-projects .portfolio-project4,
+  .portfolio-projects .portfolio-project5,
+  .portfolio-projects .portfolio-project6 {
     margin: auto;
   }
 }
 
 body {
   background-color: #10111d;
-  background-position: center;
-  background-size: cover;
 }
 
 .desktop-icons {
