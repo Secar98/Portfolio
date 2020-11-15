@@ -1,66 +1,81 @@
+Rapport Sebastian Carlson
+
 Tillgänglighet:
-På portfolio/CV sidan som jag har skapat, så har jag implementerat några olika tillgänglighets krav, från www.w3.org. Det är bland annat:
+På portfolio/CV sidan som jag har skapat, så har jag implementerat några olika tillgänglighetskrav, från www.w3.org. Det är bland annat:
 
-None-text-content vilket innebär att alla visuella element så som ikoner bilder etc. På sidan även ska vara tillgängliga för folk med synskador som inte kan se eller tolka dessa. Det har jag gjort genom att lägga till förklaringar till dessa iform av alt attribut på sidan som ska beskriva vad dessa ikoner eller bilder är förnågot. (https://www.w3.org/TR/WCAG21/#non-text-content)
+None-text-content vilket innebär att alla visuella element såsom ikoner bilder etc. På sidan även ska vara tillgängliga för folk med synskador som inte kan se eller tolka dessa. Det här har jag åstadkommit genom att lägga till förklaringar till dessa i form av alt attribut på sidan som ska beskriva vad dessa ikoner eller bilder symboliserar för något. (https://www.w3.org/TR/WCAG21/#non-text-content)
 
-Orientation vilket innebär att sidan ska kunna vissas oavsätt om du kollar på den i landscape eller i portrait mode. (https://www.w3.org/TR/WCAG21/#orientation)
+Orientation vilket innebär att sidan ska kunna visas oavsett om du kollar på den i landscape eller i portrait mode. (https://www.w3.org/TR/WCAG21/#orientation)
 
-Contrast-minimum vilket innebär att kontrasten på sidan ska vara hög så att det går att urskillja innehållet på sidan om man har synskador eller synnedsättning. Fick även ändra mina färgval under processens gång då jag använde mig av programmet lighthouse som finns inbyggt i google chrome för att se om det skulle finnas några problem med mitt färgval. (https://www.w3.org/TR/WCAG21/#contrast-minimum)
+Contrast-minimum vilket innebär att kontrasten på sidan ska vara hög så att det går att urskilja innehållet på sidan om man har synnedsättning eller synskador. Jag fick även ändra mina färgval under processens gång då jag använde mig av programmet lighthouse som finns inbyggt i google chrome för att se om det skulle finnas några problem med mitt färgval, vilket det gjorde med det ursprungliga färgvalet. (https://www.w3.org/TR/WCAG21/#contrast-minimum)
 
-Language-of-page vilket innebär att man sätter ett lang attribut på sidan som gör det lättare för inläsningsprogram att förstå vilket språk det handlar om. Jag har valt att innhållet på sidan ska vara på engelska så då har jag satt ett lang="en". (https://www.w3.org/TR/WCAG21/#language-of-page)
+Language-of-page vilket innebär att man sätter ett lang attribut på sidan som gör det lättare för inläsningsprogram att förstå vilket språk sidan innehåller. Jag har valt att innehållet på sidan ska vara på engelska så då har jag satt ett lang="en". (https://www.w3.org/TR/WCAG21/#language-of-page)
 
-Resize-text tillgänglihets kravet är satt så att sidan ska gå att skala upp till 200% utan att tappa eller förvränga innehåll. (https://www.w3.org/TR/WCAG21/#resize-text)
+Resize-text tillgänglighetskravet är satt så att sidan ska gå att skala upp till 200% utan att tappa eller förvränga innehåll. (https://www.w3.org/TR/WCAG21/#resize-text)
+
+Diskussion Tillgänglihet
+För och nackdelar med att implementera tillgänglighet:
+Fördelen med att implementera tillgänglighet på en webbsida är rätt självklar, eftersom att det kommer bidra till att flera kommer kunna använda sidan vilket leder till att man får in flera besökare. 
+
+Dock så finns det mycket man måste ta hänsyn till vilket oftast kan vara svårt då det kan komma att ta längre tid att implementera och kan även öka kostnaden för produktionen av sidan. Vilket gör att många kanske ser över tillgänglighet eftersom det kan ses som en extra kostnad än vad det kommer gynna ens verksamhet. 
+
+Det finns dock lagar just för tillgänglighet vilket är bra, dock som jag har förstått det så gäller det änsålänge bara för myndigheter men det betyder att flera kan ta del av sidan. Några bra exempel på det tycker jag är Arbetsförmedlingen och MSB.
+
 
 Scrum:
-Scrum är en modell för att utveckla, leverera och upprätthålla komplexa produkter, med en inledande tonvikt på mjukvaruutveckling, även om den har använts inom andra områden inklusive forskning, försäljning, marknadsföring och avancerad teknik. Den är utformad för team på tio eller färre medlemmar, som delar upp sitt arbete i mål som kan slutföras igenom iterationer, kallade sprints, som inte är längre än en månad och oftast runt två veckor. Scrum Teamen har dagliga möten så kallade daily sprints som varar i högst 15-minuter. I slutet av sprinten håller teamet en sprint review för att visa upp arbetet och för att kontinuerligt förbättra sig.
+Scrum är en modell för att utveckla, leverera och upprätthålla komplexa produkter, med en inledande tonvikt på mjukvaruutveckling, även om den har använts inom andra områden inklusive forskning, försäljning, marknadsföring och avancerad teknik. Den är utformad för team på tio eller färre medlemmar, som delar upp sitt arbete i mål som kan slutföras genom iterationer, kallade sprints, som inte är längre än en månad och oftast runt två veckor. Scrum Teamen har dagliga möten så kallade daily sprints som varar i högst 15-minuter. I slutet av sprinten håller teamet en sprint review för att visa upp arbetet och för att kontinuerligt förbättra sig.
+
 
 SCRUM-ROLLER:
 Product owner:
-Produkt ägaren, som representerar produktens intressenter och kundens röst, är ansvarig för att leverera en överliggande spec för en produkt. Därför är produktägaren ansvarig för en så kallad productbacklog som definerar vad som ska finnas med i den slutliga produkten. Produktägaren definierar produkten i kundcentrerade termer (vanligtvis användarberättelser), lägger till dem i produktbackloggen och prioriterar dem baserat på betydelse och beroenden. Ett scrumteam bör bara ha en produktägare, denna roll bör inte kombineras med scrummaster rollen. Produktägaren bör fokusera på affärssidan av produktutveckling och ägna merparten av sin tid igenom kontakt med intressenter och teamet. 
+Produktägaren, som representerar produktens intressenter och kundens röst, är ansvarig för att leverera en överliggande spec för en produkt. Därför är produktägaren ansvarig för en så kallad product backlog som definierar vad som ska finnas med i den slutliga produkten. Produktägaren definierar produkten i kundcentrerade termer (vanligtvis användarberättelser), lägger till dem i produktbackloggen och prioriterar dem baserat på betydelse och beroenden. 
+
 
 Developer team:
-Utvecklingsteamet har från tre till nio medlemmar som utför alla uppgifter så effektivt som möjligt inom varje sprint.
+Utvecklingsteamet har från tre till nio medlemmar som utför alla uppgifter så effektivt som möjligt inom varje sprint. Scrum mastern är oftast alltid del av utvecklingsteamet.
 
-Teamet är självorganiserande, och jobbar gemensamt eller individuellt beroende på hur gruppen väljer att strukturera upplägget. De tar även hjälp ifrån scrummastern som ska se till att allting flyter på och att det inte blir några bottlenecks
+Teamet är självorganiserande, och jobbar gemensamt eller individuellt beroende på hur gruppen väljer att strukturera upplägget. De tar även hjälp från scrum mastern som ska se till att allting flyter på och att det inte blir några bottlenecks
+
 
 Scrum Master:
-Scrum underlättas av en scrummaster som ansvarar för att ta bort komplikationer  för teamets förmåga att leverera en färdig produkt. Scrummästaren är inte en traditionell projektledare utan fungerar som en buffert mellan utvecklingsteamet och eventuella störande influenser. Scrum-mastern ser till att scrum-modellen följs och att inget förhindrar det. Scrummastern hjälper till att se till att teamet följer de överenskomna processerna i Scrum-modellen.
+Scrum underlättas av en scrum master som ansvarar för att ta bort komplikationer för teamets förmåga att leverera en färdig produkt. Scrum mastern är inte en traditionell projektledare utan fungerar som en buffert mellan utvecklingsteamet och eventuella störande influenser. Scrum-mastern ser till att scrum-modellen följs och att det inte finns några hinder. Scrum mastern hjälper till att se till att teamet följer de överenskomna processerna i Scrum-modellen.
 
-Ett av sätten som rollen som scrummaster skiljer sig från en projektledare är att den senare kan ha ansvar för personalhantering och att scrummastern inte har det. En scrummästare ger en begränsad mängd riktning eftersom laget förväntas vara självorganiserande. Scrum använder inte formellt rollen som projektledare, eftersom traditionella kommando- och kontrolltendenser skulle orsaka svårigheter.
+Ett av sätten som rollen som scrum master skiljer sig från en projektledare är att projektledaren kan ha ansvar för personalhantering och att scrum mastern inte har det. En scrum master ger en begränsad mängd riktning eftersom utvecklingsteamet förväntas vara självorganiserande. Scrum använder inte formellt rollen som projektledare, eftersom traditionella kommando- och kontroll tendenser skulle orsaka svårigheter.
+
 
 Sprint: 
-En sprint är den grundläggande utvecklingsenheten i Scrum. Sprinten är en tidboxad insats; det vill säga längden är överenskommen och fastställd i förväg för varje sprint och är normalt mellan en vecka och en månad, varav två veckor är den vanligaste.
+En sprint är är något av det viktigaste i Scrum. Sprinten är en tid bokad insats; det vill säga längden är överenskommen och fastställd i förväg för varje sprint och är normalt mellan en vecka och en månad, varav två veckor är det vanligaste.
 
-Varje sprint börjar med en sprintplanering som fastställer ett sprintmål. Teamet accepterar vad de är överens om och gör sig redo att översätta det till en sprintbacklog, med en fördelning av det arbete som ska göras och en uppskattad tidsram för sprintmålet. Varje sprint slutar med en sprintrecension, som granskar framstegen för att visa intressenter och identifierar problem och förbättringar för nästa sprint.
+Varje sprint börjar med en sprintplanering som fastställer ett sprintmål. Teamet accepterar vad de har kommit överens om och gör sig redo att översätta det till en sprint backlog, med en fördelning av det arbete som ska göras och en uppskattad tidsram för sprint målet. Varje sprint slutar med en sprint recension, som granskar framstegen för att visa intressenter, och identifiera problem och förbättringar för nästa sprint.
 
-Sprintplanering:
-I början av en sprint håller scrumteamet en sprintplanering för att diskutera och komma överens om omfattningen av arbetet som är tänkt att göras under den sprinten. Bland annat Väljer de vad som ska göras från product backlog det vill säga det som ligger först och är viktigast för produkt ägaren.
+
+Sprint Planering:
+I början av en sprint håller scrumteamet en sprintplanering för att diskutera och komma överens om omfattningen av arbetet som är tänkt att göras under den sprinten. Bland annat Väljer de vad som ska göras från product backlog det vill säga det som ligger först och är viktigast för produktägaren.
+
 
 Daily scrum:
 Varje dag under en sprint håller laget en daily scrum med specifika riktlinjer: 
 
-Alla medlemmar i utvecklingsteamet kommer beredda till den dagliga scrummen:
+Alla medlemmar i utvecklingsteamet kommer beredda till det dagilga mötet:
 Mötet startar precis i tid även om vissa medlemmar i utvecklingsteamet saknas.
 Mötet ska ske vid samma tid och plats varje dag
 Det är begränsad till femton minuter
 Vem som helst är välkommen, men endast medlemmar i utvecklingsteamet ska bidra.
 Under den dagliga scrummen svarar varje lagmedlem vanligtvis på tre frågor:
-Vad slutförde jag igår som bidrog till att laget uppfyllde vårt sprintmål?
+Vad slutförde jag igår som bidrog till att teamet uppfyller vårt sprintmål?
 Vad planerar jag att slutföra idag för att bidra till att laget uppfyller vårt sprintmål?
 Ser jag något hinder som kan hindra mig eller laget från att nå vårt sprintmål?
-Eventuella hinder som identifierats i det dagliga scrummet bör fångas av scrummastern och visas på teamets scrumbräda eller liknande. 
+Eventuella hinder som identifierats i det dagliga scrummet bör fångas av scrum mastern och visas på teamets scrum bräda eller liknande. 
 
 Inga detaljerade diskussioner bör ske under det dagliga scrummet. När mötet avslutas kan enskilda medlemmar träffas för att diskutera frågor i detalj; ett sådant möte kallas ibland en "breakout session" eller en "after party".
+
 
 Sprint review:
 I slutet av en sprint håller teamet en sprint review:
 
-Där teamet granskar det arbete som slutförts och det planerade arbetet som inte slutfördes. 
-Teamet presenterar det färdiga arbetet för intressenterna 
-De frågar även intressenterna om vad man ska arbeta vidare med
+Där teamet visar upp det de har gjort för intressenter samt produktägaren under sprintens gång. De pratar även hur sprinten har gått och vad som har gått bra samt mindre bra. 
 
-Sprint retrospektiv
-
+Sprint retrospektiv:
 Teamet reflekterar över den tidigare sprinten. De identifierar och kommer överens om förbättringar.
 
 De tre huvudfrågor att ställa i ett sprint retrospective är:
@@ -68,14 +83,29 @@ Vad gick bra under sprinten?
 Vad gick inte bra?
 Vad kan förbättras för bättre produktivitet i nästa sprint?
 
+
+Diskussion Scrum:
+För och nackdelar med scrum:
+Fördelar med att använda sig av scrum modellen är bland annat att flödet av arbetet blir mycket mer strukturerat och man får en bättre överblick över vad det är som sker under projektets gång, och även vad det är alla i utvecklingsteamet jobbar med. 
+
+Det är även bra upplagt med att man stämma av varje morgon med ett kort möte, så att man kan se hur det går för alla i gruppen.
+
+Jag ser även en fördel med att man inte ska ha för stora grupper då de ska vara mellan tre till nio personer. De leder också till att alla får något att göra samt att det inte blir för svårt att hålla reda på vad alla håller på med.
+
+Några fler fördelar med modellen är även att man har en sprint retrospective där man pratar om vad som har gått dåligt och vad som kan göras bättre. När man är klar med en sprint. Där gruppen bland annat får diskutera öppet om hur man ska utvecklas som individ samt grupp, och komma med förbättringar samt synpunkter.
+
+Problem som kan uppstå med modellen som jag ser det är att alla kanske inte känner till den, så som bland annat en del i klassen inklusive mig själv. Och då kan de bli lite svårare att applicera modellen om man inte ser till att alla får den utbildningen de behöver för att kunna använda sig av den. 
+
+Ett ytterligare problem kan vara att vi har fått höra att många företag påstår sig använda scrum modellen när det egentligen inte är så. Då kan de uppstå förvirring och det kan även leda till att projektet man håller på med tar längre tid eller måste flyttas upp.
+
+
 Grafisk-profil:
 
 En grafisk profil är en typ av instruktion för hur ett företags eller organisations ska använda sig av färger samt logotyper, styling, typsnitt och grafiska element som kan ingå i den visuella kommunikationen. Syftet är att kunna kommunicera enhetligt för att bygga ett starkt varumärke. Genom att vara konsekvent med designen så blir det tydligt för mottagaren vem kommunikationen kommer ifrån och det skapar igenkänning.
 
-Du kan sammanställa din profil i ett dokument eller liknande för att ha som utgångspunkt när du skapar bilder, bloggheader, hemsidedesign m.m. Vissa företag har också sin grafiska profil på sin hemsida med nedladdningsbara logotyper, färger, m.m. för att underlätta för kunder eller liknande som ska jobba med profilen.
+Man kan sammanställa sin profil i ett dokument eller liknande för att ha som utgångspunkt när man skapar bilder, bloggheader, hemsidedesign mm. Vissa företag har också sin grafiska profil på sin hemsida med nedladdningsbara logotyper, färger, m.m. för att underlätta för kunder eller liknande som ska jobba med profilen. Ett bra exempel är spotify om man vill använda deras logotyper så har de en hel sida för hur man ska gå tillväga då.
 
 Vad ingår i en grafisk profil?
-
 Det här är såklart lite olika men generellt kan man säga att en grafisk profil bör innehålla:
 
 En logotyp, gärna i några olika utföranden så den kan anpassas efter olika användningsområden.
@@ -83,4 +113,15 @@ En eller flera färger
 Ett eller två typsnitt
 Eventuella mönster, symboler eller andra grafiska element
 
-Något som är det allra viktigaste när man tar fram en grafisk profil är att man verkligen tänker efter vad som ska komuniceras och till vem.
+Något som är det allra viktigaste när man tar fram en grafisk profil är att man verkligen tänker efter vad som ska kommuniceras och till vem.
+
+
+Diskussion grafisk profil:
+För och nackdelar med en grafisk profil:
+Fördelen med att använda sig av en grafisk profil är att man enkelt kan anpassa en sida utifrån vad kunden vill ha och har beställt om en sådan har skapats. De blir då enklare att få en överblick över sidans struktur och även hur element ska se ut. 
+
+Problem som kan uppstå när man använder sig av en grafisk profil kan vara ifall alla i gruppen inte utgår ifrån den och man sedan levererar en produkt som inte håller sig till de specifikationer som har utlovats. vilket leder till att man får skjuta upp projektet eller eventuellt blir av med uppdraget. 
+
+Det kan även vara så att man får en grafisk profil som inte har tagit tillgänglighet i åtanke vilket kan leda till att alla kanske inte har möjlighet att ta del av sidan som kanske skulle vilja. Dock så tror jag att de flesta som skapar grafiska profiler har det i åtanke, annars finns det även bra verktyg som kan hjälpa utvecklare att se om man har något som kanske måste göras om. 
+
+

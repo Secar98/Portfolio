@@ -20,6 +20,7 @@ body {
     // changing the icons color and adding a padding
     padding-top: 5px;
     color: $secondary-color;
+    transition: 1.5s;
 
     &:hover {
       // when hovering over the icons changing the color and includes
@@ -116,10 +117,13 @@ body {
       text-shadow: 2px 2px black;
       font-size: 2em;
       font-weight: 500;
+      transition: 1s;
 
       &:hover {
         // adding the mixin when mousing over the navigation links
         @include transition-icon;
+        color: $primary-color;
+        text-shadow: none; 
       }
     }
 

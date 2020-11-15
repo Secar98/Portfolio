@@ -642,6 +642,7 @@ body {
 .desktop-icons .fab {
   padding-top: 5px;
   color: #f05454;
+  transition: 1.5s;
 }
 
 .desktop-icons .fab:hover {
@@ -727,12 +728,15 @@ body {
     text-shadow: 2px 2px black;
     font-size: 2em;
     font-weight: 500;
+    transition: 1s;
   }
   .desktop a:hover {
     color: #d43b3b;
     text-shadow: 2px 2px black;
     cursor: pointer;
     transition: 0.5s;
+    color: #10111d;
+    text-shadow: none;
   }
   .desktop .right-desktop-nav {
     float: right;
