@@ -1,0 +1,86 @@
+Tillgänglighet:
+På portfolio/CV sidan som jag har skapat, så har jag implementerat några olika tillgänglighets krav, från www.w3.org. Det är bland annat:
+
+None-text-content vilket innebär att alla visuella element så som ikoner bilder etc. På sidan även ska vara tillgängliga för folk med synskador som inte kan se eller tolka dessa. Det har jag gjort genom att lägga till förklaringar till dessa iform av alt attribut på sidan som ska beskriva vad dessa ikoner eller bilder är förnågot. (https://www.w3.org/TR/WCAG21/#non-text-content)
+
+Orientation vilket innebär att sidan ska kunna vissas oavsätt om du kollar på den i landscape eller i portrait mode. (https://www.w3.org/TR/WCAG21/#orientation)
+
+Contrast-minimum vilket innebär att kontrasten på sidan ska vara hög så att det går att urskillja innehållet på sidan om man har synskador eller synnedsättning. Fick även ändra mina färgval under processens gång då jag använde mig av programmet lighthouse som finns inbyggt i google chrome för att se om det skulle finnas några problem med mitt färgval. (https://www.w3.org/TR/WCAG21/#contrast-minimum)
+
+Language-of-page vilket innebär att man sätter ett lang attribut på sidan som gör det lättare för inläsningsprogram att förstå vilket språk det handlar om. Jag har valt att innhållet på sidan ska vara på engelska så då har jag satt ett lang="en". (https://www.w3.org/TR/WCAG21/#language-of-page)
+
+Resize-text tillgänglihets kravet är satt så att sidan ska gå att skala upp till 200% utan att tappa eller förvränga innehåll. (https://www.w3.org/TR/WCAG21/#resize-text)
+
+Scrum:
+Scrum är en modell för att utveckla, leverera och upprätthålla komplexa produkter, med en inledande tonvikt på mjukvaruutveckling, även om den har använts inom andra områden inklusive forskning, försäljning, marknadsföring och avancerad teknik. Den är utformad för team på tio eller färre medlemmar, som delar upp sitt arbete i mål som kan slutföras igenom iterationer, kallade sprints, som inte är längre än en månad och oftast runt två veckor. Scrum Teamen har dagliga möten så kallade daily sprints som varar i högst 15-minuter. I slutet av sprinten håller teamet en sprint review för att visa upp arbetet och för att kontinuerligt förbättra sig.
+
+SCRUM-ROLLER:
+Product owner:
+Produkt ägaren, som representerar produktens intressenter och kundens röst, är ansvarig för att leverera en överliggande spec för en produkt. Därför är produktägaren ansvarig för en så kallad productbacklog som definerar vad som ska finnas med i den slutliga produkten. Produktägaren definierar produkten i kundcentrerade termer (vanligtvis användarberättelser), lägger till dem i produktbackloggen och prioriterar dem baserat på betydelse och beroenden. Ett scrumteam bör bara ha en produktägare, denna roll bör inte kombineras med scrummaster rollen. Produktägaren bör fokusera på affärssidan av produktutveckling och ägna merparten av sin tid igenom kontakt med intressenter och teamet. 
+
+Developer team:
+Utvecklingsteamet har från tre till nio medlemmar som utför alla uppgifter så effektivt som möjligt inom varje sprint.
+
+Teamet är självorganiserande, och jobbar gemensamt eller individuellt beroende på hur gruppen väljer att strukturera upplägget. De tar även hjälp ifrån scrummastern som ska se till att allting flyter på och att det inte blir några bottlenecks
+
+Scrum Master:
+Scrum underlättas av en scrummaster som ansvarar för att ta bort komplikationer  för teamets förmåga att leverera en färdig produkt. Scrummästaren är inte en traditionell projektledare utan fungerar som en buffert mellan utvecklingsteamet och eventuella störande influenser. Scrum-mastern ser till att scrum-modellen följs och att inget förhindrar det. Scrummastern hjälper till att se till att teamet följer de överenskomna processerna i Scrum-modellen.
+
+Ett av sätten som rollen som scrummaster skiljer sig från en projektledare är att den senare kan ha ansvar för personalhantering och att scrummastern inte har det. En scrummästare ger en begränsad mängd riktning eftersom laget förväntas vara självorganiserande. Scrum använder inte formellt rollen som projektledare, eftersom traditionella kommando- och kontrolltendenser skulle orsaka svårigheter.
+
+Sprint: 
+En sprint är den grundläggande utvecklingsenheten i Scrum. Sprinten är en tidboxad insats; det vill säga längden är överenskommen och fastställd i förväg för varje sprint och är normalt mellan en vecka och en månad, varav två veckor är den vanligaste.
+
+Varje sprint börjar med en sprintplanering som fastställer ett sprintmål. Teamet accepterar vad de är överens om och gör sig redo att översätta det till en sprintbacklog, med en fördelning av det arbete som ska göras och en uppskattad tidsram för sprintmålet. Varje sprint slutar med en sprintrecension, som granskar framstegen för att visa intressenter och identifierar problem och förbättringar för nästa sprint.
+
+Sprintplanering:
+I början av en sprint håller scrumteamet en sprintplanering för att diskutera och komma överens om omfattningen av arbetet som är tänkt att göras under den sprinten. Bland annat Väljer de vad som ska göras från product backlog det vill säga det som ligger först och är viktigast för produkt ägaren.
+
+Daily scrum:
+Varje dag under en sprint håller laget en daily scrum med specifika riktlinjer: 
+
+Alla medlemmar i utvecklingsteamet kommer beredda till den dagliga scrummen:
+Mötet startar precis i tid även om vissa medlemmar i utvecklingsteamet saknas.
+Mötet ska ske vid samma tid och plats varje dag
+Det är begränsad till femton minuter
+Vem som helst är välkommen, men endast medlemmar i utvecklingsteamet ska bidra.
+Under den dagliga scrummen svarar varje lagmedlem vanligtvis på tre frågor:
+Vad slutförde jag igår som bidrog till att laget uppfyllde vårt sprintmål?
+Vad planerar jag att slutföra idag för att bidra till att laget uppfyller vårt sprintmål?
+Ser jag något hinder som kan hindra mig eller laget från att nå vårt sprintmål?
+Eventuella hinder som identifierats i det dagliga scrummet bör fångas av scrummastern och visas på teamets scrumbräda eller liknande. 
+
+Inga detaljerade diskussioner bör ske under det dagliga scrummet. När mötet avslutas kan enskilda medlemmar träffas för att diskutera frågor i detalj; ett sådant möte kallas ibland en "breakout session" eller en "after party".
+
+Sprint review:
+I slutet av en sprint håller teamet en sprint review:
+
+Där teamet granskar det arbete som slutförts och det planerade arbetet som inte slutfördes. 
+Teamet presenterar det färdiga arbetet för intressenterna 
+De frågar även intressenterna om vad man ska arbeta vidare med
+
+Sprint retrospektiv
+
+Teamet reflekterar över den tidigare sprinten. De identifierar och kommer överens om förbättringar.
+
+De tre huvudfrågor att ställa i ett sprint retrospective är:
+Vad gick bra under sprinten?
+Vad gick inte bra?
+Vad kan förbättras för bättre produktivitet i nästa sprint?
+
+Grafisk-profil:
+
+En grafisk profil är en typ av instruktion för hur ett företags eller organisations ska använda sig av färger samt logotyper, styling, typsnitt och grafiska element som kan ingå i den visuella kommunikationen. Syftet är att kunna kommunicera enhetligt för att bygga ett starkt varumärke. Genom att vara konsekvent med designen så blir det tydligt för mottagaren vem kommunikationen kommer ifrån och det skapar igenkänning.
+
+Du kan sammanställa din profil i ett dokument eller liknande för att ha som utgångspunkt när du skapar bilder, bloggheader, hemsidedesign m.m. Vissa företag har också sin grafiska profil på sin hemsida med nedladdningsbara logotyper, färger, m.m. för att underlätta för kunder eller liknande som ska jobba med profilen.
+
+Vad ingår i en grafisk profil?
+
+Det här är såklart lite olika men generellt kan man säga att en grafisk profil bör innehålla:
+
+En logotyp, gärna i några olika utföranden så den kan anpassas efter olika användningsområden.
+En eller flera färger
+Ett eller två typsnitt
+Eventuella mönster, symboler eller andra grafiska element
+
+Något som är det allra viktigaste när man tar fram en grafisk profil är att man verkligen tänker efter vad som ska komuniceras och till vem.
